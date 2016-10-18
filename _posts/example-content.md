@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Example content
+tags:
+ - php
 ---
 
 
@@ -45,6 +47,15 @@ var adder = new Function("a", "b", "return a + b");
 adder(2, 6);
 // > 8
 {% endhighlight %}
+
+PHP
+
+```php?start_inline=1
+class Logger
+{
+    protected $var = 'value';
+}
+```
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
