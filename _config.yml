@@ -29,3 +29,5 @@ disqus_shortname: 'chrisarmitage-github-io'
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+excerpt_separator: ''
