@@ -1,0 +1,5 @@
+<ul>
+    {% for posts in site.categories[page.display_category] %}
+    <li><a href="{{ posts.url }}">{{ posts.title }}</a>: {{ posts.excerpt }}</li>
+    {% endfor %}
+</ul>

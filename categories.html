@@ -5,7 +5,7 @@ title: Category
 
 {% for category in site.categories %}
 <li class="camelize_me">
-    <a href="/category/{{category | first}}/">
+    <a href="/categories/{{category | first}}/">
         {{category | first }}
         <span class="badge">
             {{ category | last | size }}
