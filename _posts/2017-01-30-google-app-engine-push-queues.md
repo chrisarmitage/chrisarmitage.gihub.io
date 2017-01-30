@@ -91,7 +91,7 @@ So, lets get some queues involved!
 
 ## Stage 2: Using Queues
 
-There are two types of Queue, Push and Pull. Push is the only one currently implemented on the PHP runtime. Your application has one Push Queue by default, called... `default`. You can view it via the [GAE Admin Panel](http://192.168.33.10:8000/taskqueue).
+There are two types of Queue, Push and Pull. Push is the only one currently implemented on the PHP runtime. Your application has one Push Queue by default, called... `default`. You can view it via the [GAE Admin Panel](http://192.168.33.30:8000/taskqueue).
 
 The Queue works by accepting a URL and some data, and calling said URL with said data. Not much more complicated than that.
 
