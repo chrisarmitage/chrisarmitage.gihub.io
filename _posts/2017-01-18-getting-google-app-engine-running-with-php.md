@@ -3,6 +3,9 @@ layout: post
 title: "Getting Google App Engine running with PHP"
 comments: true
 excerpt: "If you want to get up and running with GAE and PHP, I've created a basic Vagrantfile to get you as far as your first app deploy to the cloud."
+category: php
+tags:
+  - Google App Engine
 ---
 
 Herein you'll find instructions on getting Google App Engine running with PHP using vagrant. It's not the most elegant way, but it works.
