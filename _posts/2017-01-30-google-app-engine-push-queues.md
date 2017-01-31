@@ -34,6 +34,7 @@ So we can break it up. For simplicity, we'll leave the user registration alone, 
 First, we need an application config. 
 
 `> app.yaml`
+
 ```yaml
 runtime: php55
 api_version: 1
@@ -49,6 +50,7 @@ This will route any requests to the index.php file.
 And we need an application to simulate a sign-up.
 
 `> index.php`
+
 ```php
 <?php
 
@@ -98,6 +100,7 @@ The Queue works by accepting a URL and some data, and calling said URL with said
 First up, lets split out our user signup and mail code.
 
 `> index.php`
+
 ```php
 <?php
 
@@ -130,6 +133,7 @@ logDebug('Page responded in ' . round((microtime(true) - $start) * 1000) . 'ms')
 ```
 
 `> email.php`
+
 ```php
 <?php
 
@@ -152,6 +156,7 @@ logDebug('User signup in ' . round((microtime(true) - $start) * 1000) . 'ms');
 And we need a new URL mapping
 
 `> app.yaml`
+
 ```yaml
 runtime: php55
 api_version: 1
@@ -169,6 +174,7 @@ handlers:
 The groundwork is done, we just need to create the Task and send it to the Push Queue
 
 `> index.php`
+
 ```php
 <?php
 
