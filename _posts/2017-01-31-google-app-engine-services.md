@@ -26,6 +26,7 @@ Services are declared by creating an additional `app.yaml` file. The syntax is t
 Let's start with a single service (as we have done in previous tutorials)
 
 `> app.yaml`
+
 ```yaml
 runtime: php55
 api_version: 1
@@ -38,6 +39,7 @@ handlers:
 Note: We've changed the `- url:` value to `/.*`. That will match any request and route it to the script.
 
 `> app.php`
+
 ```php
 Using the default service to handle <?= $_SERVER['REQUEST_URI']; ?> with Laravel
 ```
@@ -49,6 +51,7 @@ But now we want to offer an API. And we want to do that with Silex.
 So create a second app.yaml, called `api.yaml`. The `service:` is the key addition, along with a different `script:`.
 
 `> api.yaml`
+
 ```yaml
 runtime: php55
 api_version: 1
@@ -62,6 +65,7 @@ handlers:
 And a placeholder script.
 
 `> api.php`
+
 ```php
 Using the API service to handle <?= $_SERVER['REQUEST_URI']; ?> with Silex
 ```
@@ -69,6 +73,7 @@ Using the API service to handle <?= $_SERVER['REQUEST_URI']; ?> with Silex
 If you use the launcher script from the earlier tutorial, you'll need to change it to:
 
 `> launch-gae.sh`
+
 ```
 dev_appserver.py app.yaml api.yaml --host=0.0.0.0 --admin_host=0.0.0.0 --php_executable_path=/usr/bin/php-cgi
 ```
