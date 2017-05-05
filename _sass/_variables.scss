@@ -1,0 +1,52 @@
+/* ==========================================================================
+   SCSS VARIABLES
+   ========================================================================== */
+
+/*
+   Typography related variables
+   ========================================================================== */
+
+$serif                        : "PT Serif", serif;
+$sans-serif                   : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$monospace                    : Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+
+$doc-font-size                : 16;
+$doc-line-height              : 24;
+
+$border-radius                : 4px;
+
+/*
+   Color variables
+   ========================================================================== */
+
+$white                        : #fff;
+$black                        : #000;
+
+$gray                         : #4c4c4c;
+$dark-gray                    : #191413;
+$light-gray                   : #e2e2e2;
+$lighter-gray                 : #f9f9f9;
+
+$text-color                   : $gray;
+
+$primary-color                : mix($black, $gray, 35%);
+
+$border-color                 : mix($white, $gray, 80%);
+
+
+
+$facebook-color               : #3b5998;
+$twitter-color                : #55acee;
+
+
+/*
+   Code snippet variables
+   ========================================================================== */
+
+$code-background              : mix($white, $border-color, 75%);
+$inline-code-background       : mix($white, $border-color, 75%);
+
+
+
+$brand-colour-gold: #B57D1E;
+$brand-colour-blue: #1E69B5;

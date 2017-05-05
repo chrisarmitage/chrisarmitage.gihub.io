@@ -1,0 +1,59 @@
+---
+# FM
+---
+
+@import "_variables";
+@import "_colours";
+@import "_style-guide";
+
+$font-stack:    Helvetica, sans-serif;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+a {
+  color: $link-colour;
+}
+
+.animate-fade {
+  transition: opacity 0.3s ease-out;
+}
+.animate-fade:hover {
+  opacity: 0;
+}
+
+/// Index cards
+.mdl-grid {
+  max-width: 900px;
+  margin: auto;
+}
+.mdl-card {
+  min-height: 0;
+}
+
+.mdl-card__title {
+  #flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.mdl-card-blog-post .tags-wrapper {
+  text-align: right;
+  display: none;
+}
+
+.mdl-card-blog-post .date-wrapper {
+  margin-top: 5px;
+}
+
+
+.mdl-card-blog-post h2 {
+  display: inline;
+}
+
+.mdl-card-blog-post a {
+  color: #000000;
+  text-decoration: none;
+}
