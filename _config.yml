@@ -31,3 +31,12 @@ gems:
   - jekyll-gist
 
 excerpt_separator: ''
+
+collections:
+  components:
+    output: false
+  colours:
+    output: false
+
+sass:
+  style: compressed

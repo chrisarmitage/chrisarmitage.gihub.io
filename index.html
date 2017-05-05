@@ -3,6 +3,101 @@ layout: default
 title: Home
 ---
 
+<div class="mdl-grid">
+
+  {% for post in paginator.posts %}
+  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp mdl-card-blog-post">
+    <div class="mdl-card__title">
+      <div class="title-wrapper">
+        <span class="category"><a href="#">{{ post.category }}</a> / </span>
+        <a href="{{ post.url }}">
+          <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+        </a>
+      </div>
+
+      <div class="date-wrapper">
+        <div class="mdl-card__subtitle-text">
+          {{ post.date | date_to_string }}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      {{ post.excerpt }}
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url }}">
+        Read more</a>
+    </div>
+  </div>
+
+  {% endfor %}
+
+  <nav class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp"
+  style="justify-content: space-between; flex-direction: row;">
+
+    {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+        <i class="material-icons">arrow_back</i>
+      </button>
+      Older
+    </a>
+    {% else %}
+    <span class="pagination-item older">
+      Older
+    </span>
+    {% endif %}
+
+    <div class="section-spacer"></div>
+
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a class="pagination-item newer" href="{{ site.baseurl }}">
+      Newer
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+        <i class="material-icons">arrow_forward</i>
+      </button>
+    </a>
+    {% else %}
+    <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">
+      Newer
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+        <i class="material-icons">arrow_forward</i>
+      </button>
+    </a>
+    {% endif %}
+    {% else %}
+    <!--<span class="pagination-item newer">-->
+      <!--Newer-->
+    <!--</span>-->
+    {% endif %}
+
+  </nav>
+
+</div>
+
+
+<footer class="mdl-mini-footer">
+
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Portfolio website</div>
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+<!--
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -35,3 +130,4 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+-->

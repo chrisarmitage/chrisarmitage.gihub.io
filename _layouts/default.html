@@ -3,12 +3,17 @@
 
   {% include head.html %}
 
-  <body class="layout-reverse">
+  <body>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
 
-    {% include sidebar.html %}
+          {% include header.html %}
 
-    <div class="content container">
-      {{ content }}
+      </header>
+
+      <main class="mdl-layout__content">
+        {{ content }}
+      </main>
     </div>
 
     {% include analytics.html %}
