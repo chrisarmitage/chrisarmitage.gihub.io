@@ -1,14 +1,11 @@
 # Site settings
-title: Your awesome title
+title: 'Chris Armitage'
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: 'A mixed of bag of PHP, devops, domain driven design, and possibly gaming. May have an adverse effect on activity and attention in children.'
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: '' # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-#github_username:  jekyll
+twitter_username: chrisarmitage
+github_username:  chrisarmitage
 #google_play: 'GDGX'
 #google_plus_com: '109485346959707049693'  # Community link
 #google_plus_per: '+GDGManagua'  #Personal link
