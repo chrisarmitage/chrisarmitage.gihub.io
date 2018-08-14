@@ -34,7 +34,7 @@ more_vert:
     link: www.myawesomelink.com
 
 disqus: true
-disqus_shortname: 'gdgmanagua'
+disqus_shortname: 'chrisarmitage-github-io'
 
 # Build settings
 markdown: kramdown
