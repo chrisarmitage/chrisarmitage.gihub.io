@@ -40,3 +40,6 @@ markdown: kramdown
 
 gems:
   - jekyll-paginate
+
+permalink:        pretty
+relative_permalinks: false
