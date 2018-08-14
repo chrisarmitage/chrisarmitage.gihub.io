@@ -5,7 +5,7 @@ layout: default
   <div class="mdl-grid">
   {% if site.post_type == 'highlight' %}
 
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     {% if post.highlight %}
 
     <div class="section-highlight section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
@@ -62,7 +62,7 @@ layout: default
 
   {% else %}
 
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
 
     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
       <div class="mdl-card__title" {% if post.image %} style="background: url('{{ post.image }}') center/cover;" {% endif %}>
@@ -93,4 +93,32 @@ layout: default
 
   {% endif %}
   </div>
+
+  <nav class="pagination-bar mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+
+    {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/page{{paginator.next_page}}" class="demo-nav__button">
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">arrow_back</i>
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+      Older
+    </a>
+    {% endif %}
+
+    <div class="section-spacer"></div>
+
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a href="{{ site.baseurl }}/" class="demo-nav__button">
+      {% else %}
+      <a href="{{ site.baseurl }}/page{{paginator.previous_page}}" class="demo-nav__button">
+      {% endif %}
+      Newer
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">arrow_forward</i>
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+    </a>
+    {% endif %}
+
+  </nav>
 </div>
