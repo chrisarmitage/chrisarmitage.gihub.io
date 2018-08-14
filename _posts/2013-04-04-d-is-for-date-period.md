@@ -5,6 +5,7 @@ comments: false
 category: php
 tags:
   - A to Z 2013
+published: false
 ---
 
 > Tech post: For anyone following along with the A-to-Z challenge, this is the first of what will hopefully be many tech posts. I don’t expect non-PHP programmers to have any interest here. But thanks for checking in, go grab yourself a cuppa.

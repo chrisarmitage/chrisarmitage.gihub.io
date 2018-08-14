@@ -4,6 +4,7 @@ title: "L is for Logging"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 I would hope that most devs realise the importance of good logging, even if we don’t do it.

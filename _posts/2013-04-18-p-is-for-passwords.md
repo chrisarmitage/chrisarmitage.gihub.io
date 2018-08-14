@@ -4,6 +4,7 @@ title: "P is for Passwords"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 Passwords have become an ingrained part of our life. For a developer like me, I have unique passwords for multiple servers and accounts that I have to use on a daily basis. Luckily, maybe because I’ve been doing this for a while, I have a knack for remembering them and can jump from system to system without frying my brain too much.

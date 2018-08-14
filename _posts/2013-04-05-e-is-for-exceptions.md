@@ -5,6 +5,7 @@ comments: false
 category: php
 tags:
   - A to Z 2013
+published: false
 ---
 
 Another PHP-specific post here, but one I’m hoping to get feedback on from other devs.

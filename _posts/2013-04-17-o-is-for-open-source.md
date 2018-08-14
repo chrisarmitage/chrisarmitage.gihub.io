@@ -4,6 +4,7 @@ title: "O is for Open Source"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 As far as I’m aware, Open Source is generally restricted to the programming community, though with the developments in 3D printing it’s starting to become a little more well-known.

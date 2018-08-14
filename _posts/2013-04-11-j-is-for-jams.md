@@ -5,6 +5,7 @@ comments: false
 category: raspberry-pi
 tags:
   - A to Z 2013
+published: false
 ---
 
 Raspberry Jams to be specific.
