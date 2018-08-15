@@ -5,6 +5,7 @@ comments: false
 category: php
 tags:
   - A to Z 2013
+published: false
 ---
 
 We have a script at work that’s getting a little unruly. We need a couple of nested foreach loops to do some matching and processing. But it’s getting to the point where it’s hitting the PHP memory cap. I did some snooping around, and found that using [foreach can cause memory issues](http://sldn.softlayer.com/blog/dmcaloon/PHP-Memory-Management-Foreach).

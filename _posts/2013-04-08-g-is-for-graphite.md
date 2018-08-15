@@ -5,6 +5,7 @@ comments: false
 category: devops
 tags:
   - A to Z 2013
+published: false
 ---
 
 > Note: G was supposed to be GD, the PHP graphics library. When I started writing it up I realised it would be a much longer article than the challenge is aimed at. I’ll get it written up for the future.

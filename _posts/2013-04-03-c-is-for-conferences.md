@@ -5,6 +5,7 @@ comments: false
 category: php
 tags:
   - A to Z 2013
+published: false
 ---
 
 By trade I’m a PHP developer, and by far the best way I improve myself is going to conferences.

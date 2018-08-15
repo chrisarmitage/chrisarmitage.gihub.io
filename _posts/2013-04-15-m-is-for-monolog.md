@@ -6,6 +6,7 @@ category: php
 tags:
   - A to Z 2013
   - logging
+published: false
 ---
 Following on from [Saturdays post about logging]({% post_url 2013-04-13-l-is-for-logging %}), I’ll now delve a bit more in to the technical aspects using [Monolog](https://github.com/Seldaek/monolog).
 

@@ -4,6 +4,7 @@ title: "Z is for Zombies"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 That one time I was a zombie…

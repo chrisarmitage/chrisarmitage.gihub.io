@@ -4,6 +4,7 @@ title: "S is for Stats"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 Following on from the Graphite post, I’ve started to get my head around how to use it properly in the business. It helps that some of the metrics I’m tapping in to are now producing a lot of data, so I can prod and poke them to see what they can tell me. It’s all very well having a line on the page that tells me how many searches we’ve done, but it needs to be more… understandable.

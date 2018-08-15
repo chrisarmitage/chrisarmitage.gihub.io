@@ -1,33 +1,45 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# Site settings
+title: 'Chris Armitage'
+email: your-email@domain.com
+description: 'A mixed of bag of PHP, devops, domain driven design, and possibly gaming. May have an adverse effect on activity and attention in children.'
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: '' # the base hostname & protocol for your site
+twitter_username: chrisarmitage
+github_username:  chrisarmitage
+#google_play: 'GDGX'
+#google_plus_com: '109485346959707049693'  # Community link
+#google_plus_per: '+GDGManagua'  #Personal link
+#facebook_app_id: 12345
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: false
+# Accounts
+google_analytics_id: 'UA-90035231-1'
 
-# Setup
-title:            'Chris Armitage'
-tagline:          'Web developer'
-description:      'A mixed of bag of PHP, devops, domain driven design, and possibly gaming. May have an adverse effect on activity and attention in children.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
 
-author:
-  name:           'Chris Armitage'
+more_vert:
+  option1:
+    name: Cool Option 1
+    link: www.myawesomelink.com
+  option2:
+    name: Cool Option 2
+    link: www.myawesomelink.com
+  option3:
+    name: Cool Option 3
+    link: www.myawesomelink.com
 
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
-
+disqus: true
 disqus_shortname: 'chrisarmitage-github-io'
+
+paginate: 12
+
+# Build settings
+markdown: kramdown
 
 gems:
   - jekyll-paginate
-  - jekyll-gist
 
-excerpt_separator: ''
+permalink:        pretty
+relative_permalinks: false

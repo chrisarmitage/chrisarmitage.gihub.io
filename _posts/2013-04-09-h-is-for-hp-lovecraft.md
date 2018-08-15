@@ -4,6 +4,7 @@ title: "H is for HP Lovecraft"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 Time for a non-tech post. Readers of a nervous disposition, consult with your doctor before continuing…

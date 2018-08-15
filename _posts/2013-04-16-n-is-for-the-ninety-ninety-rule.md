@@ -4,6 +4,7 @@ title: "N is for the Ninety-Ninety Rule"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 > The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.

@@ -4,6 +4,7 @@ title: "T is for Testing"
 comments: false
 tags:
   - A to Z 2013
+published: false
 ---
 
 Since I became a full-time developer a few months ago, I’ve experienced a couple of “non-forecastable critical infrastructure failures on deploy”.

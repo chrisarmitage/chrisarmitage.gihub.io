@@ -5,6 +5,7 @@ comments: false
 category: electronics
 tags:
   - A to Z 2013
+published: false
 ---
 
 [Bridge Rectifier](http://www.bridgerectifier.org.uk/) is the clever name for one of my local hackspaces, based in Hebden Bridge.
